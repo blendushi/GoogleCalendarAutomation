@@ -1,0 +1,95 @@
+/* Body Style */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Header Style */
+h1 {
+    color: #34495e;
+    font-weight: 800;
+    margin-bottom: 40px;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered container with a clean card-like style */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+/* Button styles */
+button {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Start button with gradient */
+button.start {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+}
+button.start:hover {
+    background: linear-gradient(135deg, #00a58a, #83b82b);
+    transform: translateY(-3px);
+}
+
+/* End button with gradient */
+button.end {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    color: white;
+}
+button.end:hover {
+    background: linear-gradient(135deg, #e7555e, #e6b06c);
+    transform: translateY(-3px);
+}
+
+/* Input field for description */
+input[type="text"] {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: calc(100% - 24px);
+    margin-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Time display with large fonts and center alignment */
+.time {
+    font-size: 60px;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Input description styling */
+.description {
+    margin-bottom: 20px;
+}
+
+
+/* Smooth animations for the buttons and other interactive elements */
+button {
+    transition: all 0.3s ease;
+}

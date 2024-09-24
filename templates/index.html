@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Session Tracker</title>
+    <!-- Link to external CSS file in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Session Tracker</h1>
+
+        <!-- Display elapsed time -->
+        <div class="time" id="elapsed_time">
+            <strong>Elapsed Time: </strong><span>00:00:00</span>
+        </div>
+
+        <!-- Form for starting the session -->
+        <form action="/start" method="POST">
+            <button class="start" type="submit">Start Session</button>
+        </form>
+
+        <!-- Form for ending the session -->
+        <form action="/end" method="POST">
+            <div class="description">
+                <input type="text" name="description" placeholder="Enter session description">
+            </div>
+            <button class="end" type="submit">End Session</button>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript file in the static folder -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
